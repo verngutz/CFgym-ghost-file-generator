@@ -28,7 +28,7 @@ for problem, letter in zip(problems, string.ascii_uppercase):
     print('@p', ','.join([letter, problem.get('name'), '20', '0']))
 
 for index, team in enumerate(teams):
-    print('@t', ','.join([str(index), '0', '1', f'"{team.get('name')}"']))
+    print('@t', ','.join([str(index), '0', '1', f"\"{team.get('name')}\""]))
 
 result_map = {
     'AC': 'OK',
